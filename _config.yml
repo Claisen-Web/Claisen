@@ -6,3 +6,6 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-remote-theme
+remote_theme: pages-themes/architect@v0.2.0
+theme: minima
