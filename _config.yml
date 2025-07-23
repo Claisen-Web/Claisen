@@ -1,0 +1,11 @@
+title: "Claisen Docs"
+description: "Personalised gut‑health guides: bloating, gas, heartburn & GERD."
+url: "https://docs.claisen.com"
+baseurl: ""              # no leading slash
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-remote-theme
+remote_theme: pages-themes/architect@v0.2.0
+theme: minima

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}Claisen</title>
+  {% seo %}
+
+  <style>
+    :root {
+      --font-sans: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-size-base: 16px;
+      --color-bg: #ffffff;
+      --color-text: #1a1a1a;
+      --color-accent: #0077cc;
+      --color-muted: #666666;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: var(--font-size-base);
+      line-height: 1.6;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      padding: 1.5rem;
+    }
+
+    header {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--color-accent);
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #005999;
+    }
+
+    main.content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="https://claisen.com">FAQ</a>
+      <a href="https://claisen.com/blog">Blog</a>
+      <a href="https://claisen.com/quiz">Quiz</a>
+      <a href="https://claisen.com">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <footer>
+    &copy; {{ "now" | date: "%Y" }} Claisen. All rights reserved.
+  </footer>
+</body>
+</html>
