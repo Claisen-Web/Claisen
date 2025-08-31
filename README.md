@@ -3,7 +3,7 @@
 
 ---
 
-# Real gut relief, personalised to you
+# Claisen Health: Real gut relief, personalised to you
 
 **Beat bloating**  
 Say goodbye to a bloated belly and constipation
